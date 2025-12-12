@@ -84,26 +84,104 @@
 
 // export default App
 
-import React, { Component, Fragment } from 'react'
-import State from './State'
-import Hooks from './Hooks'
-import Ittirate from './Ittirate'
-import Fragments from './Fragments'
+// import React, { Component, Fragment } from 'react'
+// import State from './State'
+// import Hooks from './Hooks'
+// import Ittirate from './Ittirate'
+// import Fragments from './Fragments'
 
-export default class App extends Component {
+// export default class App extends Component {
 
 
 
-  render() {
-    return (
-      <div>
-        {/* <State/> */}
-        {/* <Hooks/> */}
-        {/* <Ittirate/> */}
-        <Fragments/>
-      </div>
-    )
-  }
+//   render() {
+//     return (
+//       <div>
+//         {/* <State/> */}
+//         {/* <Hooks/> */}
+//         {/* <Ittirate/> */}
+//         {/* <Fragments/> */}
+
+//       </div>
+//     )
+//   }
+// }
+
+// import React, { Component } from 'react'
+// import Home from './Home'
+// import Login from './Login'
+
+// export default class App extends Component {
+//   state = {
+//     isloggedin :true
+//    }
+//   render() {
+//     if(this.state.isloggedin == true){
+//       return(
+//         <Home/>
+//       )
+
+//     }
+//     else{
+//       return(
+//         <h1><Login/></h1>
+//       )
+//     }
+   
+//   }
+// }
+
+// import React, { useState } from 'react'
+// import Home from './Home'
+// import Login from './Login'
+
+// const App = () => {
+//   const[logged,setlogged] = useState(true)
+  
+//   if (logged==true) {
+//       return(
+//         <Home/>
+//       )
+//   }
+//   else{
+//     return(
+//       <Login/>
+//     )
+//   }
+// }
+
+// export default App
+
+// import React, { Component } from 'react'
+// import Day from './Day'
+// import Switch from './Switch'
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         {/* <Day/> */}
+//         <Switch/>
+
+//       </div>
+//     )
+//   }
+// }
+
+import React from 'react'
+import Navbar from './Navbar'
+
+const App = () => {
+  return (
+    <div>
+      <Navbar/>
+     
+    </div>
+  )
 }
+
+export default App
+
+
 
 

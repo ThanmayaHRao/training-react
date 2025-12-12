@@ -1,0 +1,13 @@
+.navBlock{
+    width: 100%;
+    height: 90px;
+    background-color: aliceblue;
+}
+.navBlock > article{
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

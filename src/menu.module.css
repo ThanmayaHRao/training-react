@@ -1,0 +1,13 @@
+.menuBlock > a{
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 18px;
+    color: #838383;
+}
+.menuBlock > a:last-child
+{
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
