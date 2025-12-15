@@ -169,12 +169,15 @@
 // }
 
 import React from 'react'
-import Navbar from './Navbar'
+import Navbars from './tesla/Navbars'
+import Lifecycle from './Lifecycle'
 
 const App = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
+      {/* <Navbars/> */}
+      <Lifecycle/>
      
     </div>
   )
