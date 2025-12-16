@@ -171,7 +171,10 @@
 import React from 'react'
 import Navbars from './tesla/Navbars'
 import Lifecycle from './Lifecycle'
-import Effects from './Effects'
+// import Effects from './Effects'
+import Parent1 from './contextapi/Parent1'
+import Contextapi from './contextapi/Contextapi'
+
 
 const App = () => {
   return (
@@ -179,7 +182,11 @@ const App = () => {
       {/* <Navbar/> */}
       {/* <Navbars/> */}
       {/* <Lifecycle countVal ={1000}/> */}
-      <Effects/>
+      {/* <Effects/> */}
+      <Contextapi>
+        <Parent1/>
+      </Contextapi>
+      
      
     </div>
   )

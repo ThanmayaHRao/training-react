@@ -45,55 +45,57 @@
 // export default Effects;
 
 
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 
-const Effects = () => {
-const[detail,setdetail] = useState([])
+// const Effects = () => {
+// const[detail,setdetail] = useState([])
 
-useEffect(()=>{
-    fetch("https://jsonplaceholder.typicode.com/users")
-        .then(res=>{res.json()
-          .then((data)=>{
-            setdetail(data)
-            console.log(data)
-          })})
-        .catch(err=>{console.log(err)})
-},[])
+// useEffect(()=>{
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//         .then(res=>{res.json()
+//           .then((data)=>{
+//             setdetail(data)
+//             console.log(data)
+//           })})
+//         .catch(err=>{console.log(err)})
+// },[])
 
 
-  return (
-        <div style={{ padding: "20px" }}>
-      <table border="1" cellPadding="10" cellSpacing="0" width="100%">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>City</th>
-            <th>Phone</th>
-            <th>Website</th>
-          </tr>
-        </thead>
+//   return (
+//         <div style={{ padding: "20px" }}>
+//       <table border="1" cellPadding="10" cellSpacing="0" width="100%">
+//         <thead>
+//           <tr>
+//             <th>ID</th>
+//             <th>Name</th>
+//             <th>Username</th>
+//             <th>Email</th>
+//             <th>City</th>
+//             <th>Phone</th>
+//             <th>Website</th>
+//           </tr>
+//         </thead>
 
-        <tbody>
-          {detail && detail.length > 0 && detail.map((user) => (
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.name}</td>
-              <td>{user.username}</td>
-              <td>{user.email}</td>
-              <td>{user.address.city}</td>
-              <td>{user.phone}</td>
-              <td>{user.website}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  )
-}
+//         <tbody>
+//           {detail && detail.length > 0 && detail.map((user) => (
+//             <tr key={user.id}>
+//               <td>{user.id}</td>
+//               <td>{user.name}</td>
+//               <td>{user.username}</td>
+//               <td>{user.email}</td>
+//               <td>{user.address.city}</td>
+//               <td>{user.phone}</td>
+//               <td>{user.website}</td>
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+//     </div>
+//   )
+// }
 
-export default Effects
+// export default Effects
+
+
 
 
