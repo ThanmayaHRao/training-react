@@ -171,13 +171,15 @@
 import React from 'react'
 import Navbars from './tesla/Navbars'
 import Lifecycle from './Lifecycle'
+import Effects from './Effects'
 
 const App = () => {
   return (
     <div>
       {/* <Navbar/> */}
       {/* <Navbars/> */}
-      <Lifecycle countVal ={1000}/>
+      {/* <Lifecycle countVal ={1000}/> */}
+      <Effects/>
      
     </div>
   )

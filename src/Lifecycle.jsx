@@ -89,32 +89,83 @@
 //   }
 // }
 
+// import React, { Component } from 'react'
+// import Childcomp from './Childcomp'
+
+// export default class Lifecycle extends Component {
+//   state ={
+//     display :true
+//   }
+//   removeComp=()=>{
+//     if(this.state.display == true)
+//     {
+//       this.setState({display:false})
+//     }
+//   }
+//   render() {
+//     console.log(this.state.display)
+
+//     let comp;
+//     if(this.state.display == true)
+//     {
+//       comp = <Childcomp/>
+//     }
+//     return (
+//       <div>
+//         {comp}
+//         <button onClick={this.removeComp}>remove child comp</button>
+//       </div>
+//     )
+//   }
+// }
+
+
 import React, { Component } from 'react'
-import Childcomp from './Childcomp'
 
 export default class Lifecycle extends Component {
-  state ={
-    display :true
-  }
-  removeComp=()=>{
-    if(this.state.display == true)
-    {
-      this.setState({display:false})
-    }
-  }
-  render() {
-    console.log(this.state.display)
+ constructor(props){
+    super(props)
 
-    let comp;
-    if(this.state.display == true)
-    {
-      comp=<Childcomp/>
+    this.state ={
+      count:0
     }
+ }
+
+//  static getDerivedStateFromProps(Props , state){
+//     return{
+//       count : Props.countVal
+//     }
+//   }
+   componentDidMount(){
+    setTimeout(()=>{
+      this.setState({count : 10000})
+    },4000)
+  }
+
+// changeVal= ()=>{
+//   this.setState({count:this.props.countVal+1})
+// }
+
+  // getSnapshotBeforeUpdate(prevProps,prevState){
+  //   console.log(prevProps)
+  //   console.log(prevState)
+  //   return null;
+  // }
+  // componentDidUpdate(prevProps,prevState){
+  //    console.log(prevProps)
+  //     console.log(this.state.count)
+  // }
+
+  
+
+
+  render() {
     return (
       <div>
-        {comp}
-        <button onClick={this.removeComp}>remove child comp</button>
+         <h1>{this.state.count}</h1>
+        <button onClick={this.changeVal}> Click</button>
       </div>
     )
   }
 }
+

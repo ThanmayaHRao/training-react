@@ -3,7 +3,7 @@ import React from 'react'
 
 const Left = () => {
   return (
-  <div className="text-sm mr-5 text-blue-500">
+  <div className="">
   <p>T E S L A</p>
 </div>
 
