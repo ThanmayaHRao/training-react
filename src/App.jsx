@@ -176,6 +176,7 @@ import Parent1 from './contextapi/Parent1'
 
 import ContextAPI from './contextapi2./ContextAPI'
 import Parentapi from './contextapi2./Parentapi'
+import Usememo from './Usememo'
 
 
 const App = () => {
@@ -188,9 +189,10 @@ const App = () => {
       {/* <Contextapi>
         <Parent1/>
       </Contextapi> */}
-     <ContextAPI>
+     {/* <ContextAPI>
         <Parentapi/>
-     </ContextAPI>
+     </ContextAPI> */}
+     <Usememo/>
       
      
     </div>
